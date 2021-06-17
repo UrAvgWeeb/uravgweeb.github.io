@@ -106,38 +106,6 @@ const writeLine = (text, speed, timeout, callback) => {
   }, timeout);
 };
 
-$.getJSON(ipgeolocation, (data) => {
-  writeLine(['Authenticating...', "Granting access to <span style='font-size: 14px; color: #06d;'>[unknown]</span>..."], 30, () => {
-    if (app.skippedIntro) return;
-
-    clearCursor();
-
-    const usernames = ['user', 'dude'];
-
-    const ip = data.ip ? data.ip : usernames[Math.floor(Math.random() * usernames.length)];
-    const country = data.country_name ? data.country_name : 'your country';
-
-    writeLine([`Access granted! <span style='font-size: 14px; color: #0f0;'>[success]</span>`, `Welcome back, <i style='color: #0f0'>${ip}</i>! By the way, nice to see someone from ${country} here!`], 30, 500, () => {
-      if (app.skippedIntro) return;
-
-      clearCursor();
-
-      writeLine([`<i style='color: #F62459'>uravgweeb</i>`], 120, 500, () => {
-        timeouts.push(
-          setTimeout(() => {
-            if (app.skippedIntro) return;
-
-            clearCursor();
-
-            setTimeout(() => {
-              skipIntro();
-            }, 500);
-          }, 1000)
-        );
-      });
-    });
-  });
-});
 
 const skipIntro = () => {
   if (app.skippedIntro) return;
