@@ -1,0 +1,162 @@
+body {
+	cursor: url(../source/cursor.cur), auto !important;
+	background: #000000;
+	color: #fff;
+ 	overflow: hidden;
+ 	font-family: monospace;
+ 	text-shadow: 0px 0px 10px #000000;
+}
+
+@font-face {
+	font-family: "Another Danger - Demo";
+	src: url(../source/font.otf);
+}
+
+#neoz {               
+ 	position: absolute;
+ 	left: 50%;
+ 	top: 45%;
+ 	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+#links {               
+ 	position: absolute;
+ 	left: 50%;
+ 	top: 60%;
+ 	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+#timedate {
+ 	position: absolute;
+ 	left: 50%;
+ 	top: 97%;
+ 	transform: translate(-50%, -50%);
+ 	text-align: center;
+}
+
+#writing {               
+ 	position: absolute;
+ 	left: 50%;
+ 	top: 52%;
+ 	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+video {
+  	position: absolute;
+  	min-width: 100%;
+  	min-height: 100%;
+ 	top: 50%;
+ 	left: 50%;
+	z-index: -100;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+pre {
+	font-size: 69px;
+	letter-spacing: 30px;
+	font-family: "Another Danger - Demo";
+	text-shadow: -2px 0px red, 2px 0px #00bbff, 1px 2px green;
+	animation-name: intro;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+}
+
+a {
+ 	color: #fff;
+	cursor: url(../source/cursor.cur), auto !important;
+}
+
+a:hover {
+ 	text-shadow: 0px 0px 5px #ffffff, 0px 0px 15px #ffffff, 0px 0px 30px #ffffff;
+}
+
+a:link {
+	transition: margin 0.666s ease, font-size 0.666s ease;
+}
+
+a:link:hover {
+	margin: 5px;
+	font-size: 20px;
+}
+
+nav > ul,
+nav a {
+	color: #DBDBDB;
+	list-style:none;
+	margin:0;padding:0;
+	text-align:center
+}
+
+nav > ul > li {
+	display:inline-block;
+	margin-left: 8px;
+	margin-right: 8px;
+	padding:0;
+	cursor:default
+}
+
+nav > ul > li:after {
+	content:"|";
+	margin:0 8px;
+	opacity:.3;
+	display: none;
+}
+
+nav > ul > li:last-child:after {
+	content:"";
+	margin:0
+}
+
+nav > ul,
+nav a {
+	color: #DBDBDB;
+    	font-size: 20px;
+	list-style:none;
+	margin:0;padding:0;
+	text-align:center
+}
+
+nav > ul > li {
+	display:inline-block;
+	margin-left: 8px;
+	margin-right: 8px;
+	padding:0;
+	cursor:default
+}
+
+nav > ul > li:after {
+	content:"|";
+	margin:0 8px;
+	opacity:.3
+}
+
+nav > ul > li:last-child:after {
+	content:"";
+}
+
+h1 {
+  font-size: 1em;
+  color: white;
+}
+
+span {
+  	border-right: .069em solid;
+  	animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  	50% {
+    	border-color: transparent;
+  	}
+}
+
+@keyframes intro {
+	0% {
+	  transform: scale(3, 3);
+	100% {
+	  transform: scale(1, 1);
+	}
+}
