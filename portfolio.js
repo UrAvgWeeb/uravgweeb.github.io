@@ -9,8 +9,8 @@ const mobileAndTabletCheck = () => /Android|webOS|iPhone|iPad|iPod|BlackBerry|IE
 $(document).ready(() => {
   const links = [
     {
-      name: 'xnlrd',
-      link: '76561199151954722',
+      name: 'uravgweeb',
+      link: '76561199174039335',
     },
   ];
 
@@ -65,7 +65,7 @@ $('html').on('contextmenu', (event) => {
   img.src = 'assets/others/trollface.jpg';
   img.width = 64;
   img.height = 64;
-  img.alt = 'xnlrd.xxx';
+  img.alt = 'uravgweeb';
   img.style = `position: absolute; left: ${event.pageX}px; top: ${event.pageY}px; z-index: 10`;
   img.className = `troll ${trollfaceLight}`;
 
