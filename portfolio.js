@@ -30,7 +30,7 @@ $(document).ready(() => {
     app.shouldIgnoreVideo = true;
   }
 
-  app.titleChanger(['xnlrd.xxx']);
+  app.titleChanger(['uravgweeb']);
   app.iconChanger(['assets/icons/Moon.jpg']);
 });
 
@@ -122,7 +122,7 @@ $.getJSON(ipgeolocation, (data) => {
 
       clearCursor();
 
-      writeLine([`<i style='color: #F62459'>xnlrd.xxx</i>`], 120, 500, () => {
+      writeLine([`<i style='color: #F62459'>uravgweeb</i>`], 120, 500, () => {
         timeouts.push(
           setTimeout(() => {
             if (app.skippedIntro) return;
