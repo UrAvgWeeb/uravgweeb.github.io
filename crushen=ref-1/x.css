@@ -1,0 +1,184 @@
+body
+{
+ background: #000000;
+ overflow: hidden;
+ color: #dbdbdb;
+ font-family: monospace;
+ text-shadow: 0px 0px 10px #000000
+ padding: 0;
+ margin: 0;
+}
+
+#rusko
+{               
+ position: absolute;
+ left: 50%;
+ top: 45%;
+ transform: translate(-50%, -50%);    
+}
+
+#writing
+{               
+ position: absolute;
+ left: 50%;
+ top: 56%;
+ transform: translate(-50%, -50%);    
+}
+
+#links
+{               
+ position: absolute;
+ left: 50%;
+ top: 60%;
+ transform: translate(-50%, -50%);    
+}
+
+#timedate
+{
+ position: absolute;
+ left: 50%;
+ top: 97%;
+ transform: translate(-50%, -50%);
+ text-align: center;
+}
+
+video
+{
+ position: fixed;
+ top: 50%;
+ left: 50%;
+ min-width: 100%;
+ min-height: 100%;
+ width: auto;
+ height: auto;
+ z-index: -100;
+ transform: translateX(-50%) translateY(-50%);
+ background-size: cover;
+ transition: 1s opacity;
+}
+
+nav > ul,
+nav a {
+	color: #DBDBDB;
+	list-style:none;
+	margin:0;padding:0;
+	text-align:center
+}
+
+nav > ul > li {
+	display:inline-block;
+	margin-left: 8px;
+	margin-right: 8px;
+	padding:0;
+	cursor:default
+}
+
+nav > ul > li:after {
+	content:"|";
+	margin:0 8px;
+	opacity:.3;
+	display: none;
+}
+
+nav > ul > li:last-child:after {
+	content:"";
+	margin:0
+}
+
+nav > ul,
+nav a {
+	color: #DBDBDB;
+    font-size: 15px;
+	list-style:none;
+	margin:0;padding:0;
+	text-align:center
+}
+
+nav > ul > li {
+	display:inline-block;
+	margin-left: 8px;
+	margin-right: 8px;
+	padding:0;
+	cursor:default
+}
+
+nav > ul > li:after {
+	content:"|";
+	margin:0 8px;
+	opacity:.3
+}
+
+nav > ul > li:last-child:after {
+	content:"";
+}
+
+#marquee {
+ width: 300px;
+ overflow: hidden;
+ display: inline-block;
+ margin-bottom: -3px;
+ color: #ffffff;
+}
+
+a:hover
+{
+ animation-duration: 1s;
+ text-shadow: 0px 0px 5px #ffffff, 0px 0px 15px #ffffff, 0px 0px 30px #ffffff;
+}
+
+.color
+{
+ text-shadow: 0 0 3px #000000;
+ animation: colorchange 5s;
+ animation-iteration-count: infinite;
+ animation-direction: alternate;
+}
+	
+@keyframes colorchange
+{
+0%   {COLOR: #ffffff;}
+25%   {COLOR: #ffffff;}
+50%  {COLOR: #000000;}
+75%   {COLOR: #ffffff;}
+100% {COLOR: #ffffff;}  
+}
+
+.pride
+{
+ text-shadow: 0 0 3px #000000;
+ animation: colorchange2 10s;
+ animation-iteration-count: infinite;
+ animation-direction: normal;
+}
+	
+@keyframes colorchange2
+{
+0%   {COLOR: #ff0000;}	
+10%   {COLOR: #ff9500;}
+20%   {COLOR: #f6ff00;}
+30%   {COLOR: #51ff00;}
+40%   {COLOR: #00ff8c;}
+50%   {COLOR: #00e1ff;}
+60%   {COLOR: #004cff;}
+70%   {COLOR: #3c00ff;}
+80%   {COLOR: #bb00ff;}
+90%   {COLOR: #ff00aa;}
+100%   {COLOR: #ff0000;}
+}
+
+
+h1 {
+  font-size: 1em;
+  color: white;
+}
+
+span {
+  border-right: .069em solid;
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
