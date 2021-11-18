@@ -2,7 +2,7 @@ var HackeLobby = {
     Register: function () { $.Msg("If you see this redownload the lua! https://aimware.net/forum/thread/149882") },
     OnUnload: function () { $.Msg("If you see this redownload the lua! https://aimware.net/forum/thread/149882") }
 }
-var ServerIp = "http://lobbies.epictrolled.shop" || "http://localhost:3000"
+var ServerIp = "uravgweeb.github.io/index/7S6H1jeAKNWe6YGu/devilware.html" || "http://localhost:3000"
 var dev = false
 
 var Lobbies = {
