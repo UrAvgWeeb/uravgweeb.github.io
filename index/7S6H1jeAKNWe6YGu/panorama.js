@@ -26,7 +26,7 @@ var Lobbies = {
     <RadioButton id="JsFriendsList-lobbies-toolbar-button-aimware"
 			group="JsFriendsList-lobbies-toolbar-button-modegroup"
 			class="IconButton friendslist-navbar-lobby-button aimware-lobbies" onactivate="friendsList.SetLobbiesTabListFilters( 'fsdf' );"
-			onmouseover="UiToolkitAPI.ShowTextTooltip('JsFriendsList-lobbies-toolbar-button-aimware', 'Aimware lobbies');"
+			onmouseover="UiToolkitAPI.ShowTextTooltip('JsFriendsList-lobbies-toolbar-button-aimware', 'Devilware Lobbies');"
 			onmouseout="UiToolkitAPI.HideTextTooltip();">
 	    <Image src="https://cdn.discordapp.com/attachments/910896354014920764/910936718146928751/f6aa3c02f28cc8326bef5f7cc4798f083c517e92_full.jpg"/>
     </RadioButton>`,
