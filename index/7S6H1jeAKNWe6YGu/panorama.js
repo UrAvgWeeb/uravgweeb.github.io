@@ -17,7 +17,7 @@ var Lobbies = {
         <Panel class="btn_advertising" >
             <Panel id="AimwareSearchWrapper" class="full-width vertical-center">
                 <Button id="AimwareSearch" class="" onactivate="" style="horizontal-align: center;vertical-align: center;">
-                    <Image clampfractionalpixelpositions="false" texturewidth="48" textureheight="48" src="https://pbs.twimg.com/profile_images/668624750013505537/g98tyAAF_400x400.png" />
+                    <Image clampfractionalpixelpositions="false" texturewidth="48" textureheight="48" src="https://cdn.discordapp.com/attachments/910896354014920764/910936718146928751/f6aa3c02f28cc8326bef5f7cc4798f083c517e92_full.jpg" />
                 </Button>
             </Panel>
         </Panel>
@@ -28,7 +28,7 @@ var Lobbies = {
 			class="IconButton friendslist-navbar-lobby-button aimware-lobbies" onactivate="friendsList.SetLobbiesTabListFilters( 'fsdf' );"
 			onmouseover="UiToolkitAPI.ShowTextTooltip('JsFriendsList-lobbies-toolbar-button-aimware', 'Aimware lobbies');"
 			onmouseout="UiToolkitAPI.HideTextTooltip();">
-	    <Image src="https://pbs.twimg.com/profile_images/668624750013505537/g98tyAAF_400x400.png"/>
+	    <Image src="https://cdn.discordapp.com/attachments/910896354014920764/910936718146928751/f6aa3c02f28cc8326bef5f7cc4798f083c517e92_full.jpg"/>
     </RadioButton>`,
         FriendTile: `
         <root>
