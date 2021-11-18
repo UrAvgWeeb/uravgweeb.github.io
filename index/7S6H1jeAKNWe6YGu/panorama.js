@@ -23,10 +23,10 @@ var Lobbies = {
         </Panel>
     </root>`,
         GetPlayers: `
-    <RadioButton id="JsFriendsList-lobbies-toolbar-button-aimware"
+    <RadioButton id="JsFriendsList-lobbies-toolbar-button-devilware"
 			group="JsFriendsList-lobbies-toolbar-button-modegroup"
-			class="IconButton friendslist-navbar-lobby-button aimware-lobbies" onactivate="friendsList.SetLobbiesTabListFilters( 'fsdf' );"
-			onmouseover="UiToolkitAPI.ShowTextTooltip('JsFriendsList-lobbies-toolbar-button-aimware', 'Devilware Lobbies');"
+			class="IconButton friendslist-navbar-lobby-button devilware-lobbies" onactivate="friendsList.SetLobbiesTabListFilters( 'fsdf' );"
+			onmouseover="UiToolkitAPI.ShowTextTooltip('JsFriendsList-lobbies-toolbar-button-devilware', 'Devilware Lobbies');"
 			onmouseout="UiToolkitAPI.HideTextTooltip();">
 	    <Image src="https://cdn.discordapp.com/attachments/910896354014920764/910936718146928751/f6aa3c02f28cc8326bef5f7cc4798f083c517e92_full.jpg"/>
     </RadioButton>`,
@@ -89,13 +89,13 @@ var Lobbies = {
         let panel = $.GetContextPanel()
         let bar = panel.FindChildTraverse("JsMainMenuNavBar")
 
-        this.Register = $.CreatePanel("Panel", bar, "AimwareSearchPanel")
+        this.Register = $.CreatePanel("Panel", bar, "DevilwareSearchPanel")
         this.Register.LoadLayoutFromStringAsync(this.Buttons.Register, false, false)
         this.Register.GetChild(0).GetChild(0).SetPanelEvent("onactivate", () => this.RegisterButton.OnClick())
         bar.MoveChildAfter(this.Register, bar.FindChildTraverse("HireAdvertisingToggleContainer").GetParent())
 
         let lobbies = panel.FindChildTraverse("JsFriendsList-lobbies").GetChild(0).GetChild(0)
-        this.GetPlayers = $.CreatePanel("Panel", lobbies, "AimwareGetPlayersButton")
+        this.GetPlayers = $.CreatePanel("Panel", lobbies, "DevilwareGetPlayersButton")
         this.GetPlayers.BCreateChildren(this.Buttons.GetPlayers)
         this.GetPlayers.GetChild(0).SetPanelEvent("onactivate", () => Lobbies.LoadButton.ShowOptions())
         lobbies.MoveChildAfter(this.GetPlayers, lobbies.FindChildTraverse("JsFriendsList-lobbies-toolbar-button-cooperative"))
